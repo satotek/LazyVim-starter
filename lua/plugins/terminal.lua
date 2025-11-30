@@ -2,10 +2,18 @@ return {
   {
     "akinsho/toggleterm.nvim",
     version = "*",
-    opts = {
 
+    keys = {
+      {
+        "<leader>tt",
+        "<cmd>ToggleTerm<cr>",
+        mode = { "n", "t" },
+        desc = "Toggle terminal",
+      },
+    },
+    opts = {
+      open_mapping = nil,
       size = 100,
-      open_mapping = [[<c-t>]],
       hide_numbers = true,
       shade_filetypes = {},
       shade_terminals = true,
